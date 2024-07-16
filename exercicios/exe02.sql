@@ -1,10 +1,9 @@
 create database e_commerce;
-
 use e_commerce;
 
 -- Criação da tabela de produtos
 create table produtos (
-    id int primary key,
+    id int auto_increment primary key,
     nome varchar(100),
     descricao text,
     preco decimal(10, 2),

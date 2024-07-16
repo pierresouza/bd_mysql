@@ -1,9 +1,9 @@
 create database rh_system;
-
 use rh_system;
 
+-- Criação da tabela de colaboradores
 CREATE TABLE tb_colaboradores (
-    id INT PRIMARY KEY,
+    id INT PRIMARY KEY auto_increment,
     nome VARCHAR(100),
     cargo VARCHAR(50),
     departamento VARCHAR(50),
@@ -28,5 +28,4 @@ select * from tb_colaboradores where salario < 2000;
 select * from tb_colaboradores;
 
 -- atualiza o salario do colaborador que o id correspondente é 5
-update tb_colaboradores set salario = 1900.00 where id = 5;
-
+update tb_colaboradores set salario = 1900.00 where id = 5
